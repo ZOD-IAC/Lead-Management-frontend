@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 const Register = () => {
   const router = useRouter();
-  const [userData, setUserData] = useState({});
+  const [userData, setUserData] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
 
   const handleChange = (e) => {
     const name = e.target.name;
